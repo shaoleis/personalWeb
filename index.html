@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A minimal personal website starter you can customize and publish quickly." />
+  <meta property="og:title" content="Personal Web Starter" />
+  <meta property="og:description" content="A clean, responsive template for your portfolio and contact info." />
+  <meta property="og:type" content="website" />
+  <title>Personal Web Starter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to main content</a>
+  <header class="site-header">
+    <div class="logo">Your Name</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Someone who builds thoughtful digital experiences.</h1>
+        <p class="lede">
+          This starter page gives you a clean baseline for a personal website. Swap in your
+          details, adjust the color palette, and publish it wherever you like.
+        </p>
+        <div class="hero__actions">
+          <a class="button" href="#projects">View projects</a>
+          <a class="button button--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__badge">
+        <span>Available for new opportunities</span>
+      </div>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>
+        Add a concise introduction here. Mention what you do, what you enjoy working on, and how
+        you approach problems. Keep it short so visitors can quickly understand your story.
+      </p>
+    </section>
+
+    <section id="experience" class="panel">
+      <h2>Experience</h2>
+      <div class="card-grid">
+        <article class="card">
+          <header>
+            <p class="eyebrow">2023 – Present</p>
+            <h3>Role Title · Company</h3>
+          </header>
+          <p>
+            Outline your current work in a few sentences. Focus on the impact you deliver and the
+            technologies or domains you spend time in.
+          </p>
+        </article>
+        <article class="card">
+          <header>
+            <p class="eyebrow">2021 – 2023</p>
+            <h3>Earlier Role · Company</h3>
+          </header>
+          <p>
+            Describe notable achievements or responsibilities from an earlier role. Bullet points
+            work well if you have multiple highlights.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <header>
+            <p class="eyebrow">Featured</p>
+            <h3>Project Name</h3>
+          </header>
+          <p>
+            Give a one- or two-line summary of what the project does and why it matters. Add a
+            link below so people can learn more.
+          </p>
+          <a class="link" href="#">View project ↗</a>
+        </article>
+        <article class="card">
+          <header>
+            <p class="eyebrow">Recent</p>
+            <h3>Another Project</h3>
+          </header>
+          <p>
+            Highlight something you are proud of. Screenshots or live demos make this section more
+            engaging.
+          </p>
+          <a class="link" href="#">View project ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact">
+      <h2>Contact</h2>
+      <p>
+        Ready to chat? Drop a note at <a href="mailto:hello@example.com">hello@example.com</a> or
+        connect on your favorite network.
+      </p>
+      <form class="contact-form" onsubmit="return false;">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="3" placeholder="What would you like to build?"></textarea>
+        </label>
+        <button type="submit" class="button">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with a lightweight starter you can customize in minutes.</p>
+    <button id="theme-toggle" class="button button--ghost" aria-label="Toggle theme">Toggle theme</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
